@@ -1,0 +1,32 @@
+{
+  "name": "saucedemo-playwright-e2e",
+  "version": "1.0.0",
+  "description": "Enterprise-grade Playwright E2E Automation Testing Framework for SauceDemo with POM, MCP Exploration, and SIT Matrix",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chrome": "playwright test --project=\"Google Chrome\"",
+    "test:report": "playwright show-report",
+    "generate:sit": "ts-node src/utils/excel-generator.ts"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "e2e",
+    "testing",
+    "saucedemo",
+    "qa",
+    "pom"
+  ],
+  "author": "SQA Batch 31",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.8",
+    "exceljs": "^4.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
+

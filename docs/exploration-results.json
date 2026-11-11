@@ -1,0 +1,94 @@
+{
+  "login": {
+    "title": "Swag Labs",
+    "selectors": {
+      "username": "[data-test=\"username\"]",
+      "password": "[data-test=\"password\"]",
+      "loginButton": "[data-test=\"login-button\"]",
+      "errorMessage": "[data-test=\"error\"]"
+    },
+    "verifiedErrors": {
+      "emptyUsername": "Epic sadface: Username is required",
+      "lockedOutUser": "Epic sadface: Sorry, this user has been locked out."
+    },
+    "verified": true
+  },
+  "inventory": {
+    "headerTitle": "Products",
+    "totalItems": 6,
+    "firstProduct": {
+      "name": "Sauce Labs Backpack",
+      "price": "$29.99"
+    },
+    "sortDropdownAvailable": true,
+    "sortOptions": [
+      "Name (A to Z)",
+      "Name (Z to A)",
+      "Price (low to high)",
+      "Price (high to low)"
+    ],
+    "selectors": {
+      "pageTitle": "[data-test=\"title\"]",
+      "itemContainer": ".inventory_item",
+      "itemName": "[data-test=\"inventory-item-name\"]",
+      "itemDesc": "[data-test=\"inventory-item-desc\"]",
+      "itemPrice": "[data-test=\"inventory-item-price\"]",
+      "sortDropdown": "[data-test=\"product-sort-container\"]",
+      "cartBadge": "[data-test=\"shopping-cart-badge\"]",
+      "cartLink": "[data-test=\"shopping-cart-link\"]"
+    }
+  },
+  "cart": {
+    "badgeCount": "1",
+    "toggleButtonText": "Remove",
+    "cartItemCount": 1,
+    "cartItemName": "Sauce Labs Backpack",
+    "selectors": {
+      "cartItem": ".cart_item",
+      "continueShoppingButton": "[data-test=\"continue-shopping\"]",
+      "checkoutButton": "[data-test=\"checkout\"]",
+      "removeButton": "[data-test^=\"remove-\"]"
+    }
+  },
+  "checkoutStepOne": {
+    "emptyFirstNameError": "Error: First Name is required",
+    "selectors": {
+      "firstNameInput": "[data-test=\"firstName\"]",
+      "lastNameInput": "[data-test=\"lastName\"]",
+      "postalCodeInput": "[data-test=\"postalCode\"]",
+      "continueButton": "[data-test=\"continue\"]",
+      "cancelButton": "[data-test=\"cancel\"]",
+      "errorMessage": "[data-test=\"error\"]"
+    }
+  },
+  "checkoutStepTwo": {
+    "subtotalText": "Item total: $29.99",
+    "taxText": "Tax: $2.40",
+    "totalText": "Total: $32.39",
+    "selectors": {
+      "subtotalLabel": "[data-test=\"subtotal-label\"]",
+      "taxLabel": "[data-test=\"tax-label\"]",
+      "totalLabel": "[data-test=\"total-label\"]",
+      "finishButton": "[data-test=\"finish\"]",
+      "cancelButton": "[data-test=\"cancel\"]"
+    }
+  },
+  "checkoutComplete": {
+    "completeHeader": "Thank you for your order!",
+    "completeText": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
+    "backHomeButtonVisible": true,
+    "selectors": {
+      "completeHeader": "[data-test=\"complete-header\"]",
+      "completeText": "[data-test=\"complete-text\"]",
+      "backHomeButton": "[data-test=\"back-to-products\"]"
+    }
+  },
+  "sidebar": {
+    "menuButton": "#react-burger-menu-btn",
+    "logoutLink": "[data-test=\"logout-sidebar-link\"]",
+    "resetLink": "[data-test=\"reset-sidebar-link\"]",
+    "allItemsLink": "[data-test=\"inventory-sidebar-link\"]",
+    "aboutLink": "[data-test=\"about-sidebar-link\"]",
+    "verified": true
+  }
+}
